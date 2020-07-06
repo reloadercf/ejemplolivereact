@@ -4,6 +4,12 @@ import './App.css';
 import Buton from './components/button/Buton'
 
 function App() {
+      let handleAgregar=()=>{
+        console.log("Esto esta agregando")
+    }
+    let handleBorrar=()=>{
+        console.log("Esto esta borrando")
+    }
   return (
     <div className="App">
       <header className="App-header">
@@ -20,8 +26,12 @@ function App() {
           Learn React
         </a>
         <Buton
-        texto="No tengo mucha imaginacion en vivo"
-        logica=""
+        texto="Agregar elemetos"
+        logica={handleAgregar}
+        />
+        <Buton
+        texto="Borrar elemetos"
+        logica={handleBorrar}
         />
       
       </header>
